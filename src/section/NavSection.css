@@ -13,6 +13,15 @@
 
 
 
+.cart-number{
+  position: absolute;
+    top: -22px;
+    left: 26px;
+    background: var(--Pry-Color, #97BF38);
+    border-radius: 50%;
+    width: 15px;
+    text-align: center;
+}
 
 
 

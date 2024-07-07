@@ -6,12 +6,16 @@
     faHeart,
     faBars, // Hamburger icon
   } from "@fortawesome/free-solid-svg-icons";
+  import { useCart } from "../context/CartContext";
   import './NavSection.css'
 
   function SectionOne() {
     const [activeItem, setActiveItem] = useState<number | null>(null);
     const [activeButton, setActiveButton] = useState<string | null>(null);
    
+     const { cart } = useCart();
+
+      console.log(cart,'cart')
 
     const handleItemClick = (index: number) => {
       setActiveItem(index);
@@ -143,12 +147,16 @@
               style={{ margin: "0 10px" }}
               icon={faMagnifyingGlass}
             />
-            <FontAwesomeIcon
-              style={{ margin: "0 10px" }}
-              icon={faCartShopping}
-            />
+            <div style={{position:'relative'}}>
+              <FontAwesomeIcon
+                style={{ margin: "0 10px" }}
+                icon={faCartShopping}
+              />
+              <p className='cart-number'style={{position:'absolute'}}>{cart.length}</p>
+            </div>
+
             <FontAwesomeIcon style={{ margin: "0 10px" }} icon={faHeart} />
-            <div className='hambuger-btn'style={{ marginRight: "10px" }}>
+            <div className="hambuger-btn" style={{ marginRight: "10px" }}>
               <FontAwesomeIcon
                 icon={faBars}
                 style={{ fontSize: "25px", cursor: "pointer" }}
