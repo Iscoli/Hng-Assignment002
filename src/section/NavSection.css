@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+ .hambuger-btn{
+  display:none;
+ }
+
+
+
+
+
+
+ .nav2{
+    display:block;
+  }
+   .nav3{
+    display:block;
+  }
+
+
+@media(max-width:1000px){
+  .nav2{
+    display:none;
+  }
+     .nav3{
+    display:none;
+  }
+.hambuger-btn{
+display: block;
+}
+}
+
+@media(min-width:1000px){
+
+
+}
+

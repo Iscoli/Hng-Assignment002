@@ -1,0 +1,186 @@
+.mainCardContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-gap: 0.1rem;
+  justify-content: center;
+  align-self: center;
+  margin:3%;
+}
+
+.cardDiv {
+  align-items: center;
+  padding: 3px 10px;
+  position: relative;
+}
+
+
+.heartIconContainer {
+  position: absolute;
+  top: 10px;
+  right: 17px;
+}
+
+.cardImg {
+  width: 100%;
+}
+
+.amount-tag {
+  font-family: Poppins;
+  font-size: 10.24px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: var(--Grey-100, #040506);
+  margin-top: -15px;
+}
+
+.dicount-tag {
+  font-family: Poppins;
+  font-size: 10.24px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: var(--Grey-20, #B1B2B4);
+}
+
+.name-tag {
+  font-family: Poppins;
+  font-size: 12.8px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.discount-stroke {
+  text-decoration: line-through;
+}
+
+
+
+
+.css-wjh20t-MuiPagination-ul{
+  justify-content: center;
+}
+
+
+/* Center the pagination */
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Style the pagination buttons */
+.MuiPaginationItem-root {
+  color: #251F73; /* Default color */
+}
+
+/* Change the color when hovered */
+.MuiPaginationItem-root:hover {
+  background-color: #EB0B18; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+/* Style for selected page number */
+.Mui-selected {
+  background-color: #251F73 !important; /* Background color of selected item */
+  color: white !important; /* Text color of selected item */
+}
+
+
+@media (min-width: 355px) {
+  .mainCardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-gap: 0.4rem;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 450px) {
+  .mainCardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-gap: 0.4rem;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 550px) {
+  .mainCardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-gap: 0.4rem;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 590px) {
+  .mainCardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-gap: 0.4rem;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 730px) {
+  .mainCardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-gap: 0.4rem;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 850px) {
+  .mainCardContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+    grid-gap: 0.4rem;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 995px) {
+  .mainCardContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 0.2rem;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1110px) {
+  .mainCardContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 0.4rem;
+    justify-content: center;
+    align-self: center;
+  }
+}
