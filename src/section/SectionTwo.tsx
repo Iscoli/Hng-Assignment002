@@ -1,44 +1,27 @@
+// SectionTwo.tsx
 import React, { useState } from "react";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import { useCart } from "../context/CartContext";
 import { datas } from "../components/Data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faStar,
-  faCartShopping,
-  faHeart,
-} from "@fortawesome/free-solid-svg-icons";
+import { faStar, faCartShopping, faHeart } from "@fortawesome/free-solid-svg-icons";
 import "./SectionTwo.css";
 
 const itemsPerPage = 10; // Number of items to display per page
 
 function SectionTwo() {
   const [page, setPage] = useState<number>(1); // Current page state
-  const { addToCart, removeFromCart, cart } = useCart(); // Destructure addToCart, removeFromCart, and cart from CartContext
+  const { addToCart} = useCart(); // Destructure addToCart and cart from CartContext
 
-  // Calculate the index range for the current page
-  const startIndex = (page - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentData = datas.slice(startIndex, endIndex);
-
-  const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
-    setPage(value);
-  };
-
-  const isInCart = (productName: string) => {
-    return cart.some((item) => item.name === productName);
-  };
-
-  const getCartItemQuantity = (productName: string) => {
-    const cartItem = cart.find((item) => item.name === productName);
-    return cartItem ? cartItem.quantity : 0;
-  };
+ const handleChange = (_event: React.ChangeEvent<unknown>, value: number) => {
+   setPage(value);
+ };
 
   return (
     <div>
       <div className="mainCardContainer">
-        {currentData.map((data) => (
+        {datas.slice((page - 1) * itemsPerPage, page * itemsPerPage).map((data) => (
           <div key={data.name} className="cardDiv">
             <div className="heartIconContainer">
               <FontAwesomeIcon icon={faHeart} />
@@ -76,12 +59,11 @@ function SectionTwo() {
                 {data.rating}
               </p>
               <div>
-               
-                  <FontAwesomeIcon
-                    style={{ color: "#251F73", cursor: "pointer" }}
-                    icon={faCartShopping}
-                    onClick={() => addToCart(data)}
-                  />
+                <FontAwesomeIcon
+                  style={{ color: "#251F73", cursor: "pointer" }}
+                  icon={faCartShopping}
+                  onClick={() => addToCart(data)}
+                />
               </div>
             </div>
           </div>
@@ -100,3 +82,4 @@ function SectionTwo() {
 }
 
 export default SectionTwo;
+
