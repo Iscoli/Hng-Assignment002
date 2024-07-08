@@ -1,4 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import "./Footer.css";
+import {
+  faLocationDot,
+  faEnvelope,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
@@ -6,8 +13,18 @@ function Footer() {
       <div>
         <p className="shopit-footer">Shopit</p>
         <ul>
-          <li>165 Main Street Lekki</li>
-          <li>+234 9075643219</li>
+          <li>
+            <FontAwesomeIcon className="iconnet" icon={faLocationDot} />
+            165 Main Street Lekki
+          </li>
+          <li>
+            <FontAwesomeIcon className="iconnet" icon={faEnvelope} />
+            Info@shopit.com
+          </li>
+          <li>
+            <FontAwesomeIcon className="iconnet" icon={faPhone} />
+            +234 9075643219
+          </li>
         </ul>
       </div>
       <div>
@@ -24,10 +41,7 @@ function Footer() {
       <div>
         <p className="follow-footer">Follow Us</p>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+         
         </ul>
       </div>
     </section>

@@ -11,6 +11,7 @@
   line-height: 24px;
 }
 
+ 
 @media (max-width: 500px) {
   .footer-section {
     margin-left: 3%;
@@ -38,9 +39,14 @@
     width: 86px;
     text-align: center;
   }
+  
 }
 
 @media (min-width: 500px) {
+
+  .iconnet{
+    color: 'white';
+  }
   .footer-section {
     display: flex;
     align-items: baseline;

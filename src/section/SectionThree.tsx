@@ -6,11 +6,11 @@ function SectionThree() {
       <img className="woman1" src="/woman2.png" alt="Woman 1" />
       <img className="woman2" src="/woman1.png" alt="Woman 2" />
       <div className="dark-layer"></div>
-      <div className="overlay-text">
-        <h1>Subscribe Our Newsletter</h1>
+      <div className="overlay-test">
+        <h5>Subscribe Our Newsletter</h5>
         <p>
-          Sign up for our newsletter to receive the latest product market
-          updates, and fashion tips straight to your inbox.
+          Sign up for our newsletter to receive the latest <br></br> product market
+          updates, and fashion tips <br></br> straight to your inbox.
         </p>
         <form>
           <input 

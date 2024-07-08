@@ -1,118 +1,27 @@
-import './SectionOne.css'
+import "./SectionOne.css";
 
 export default function SectionOne() {
   return (
     <div style={{ position: "relative", paddingTop: "70px" }}>
       <hr />
       <div style={{ position: "relative" }}>
-        <img
-          style={{
-            height: "450px",
-            objectFit: "cover",
-            width: "100%",
-          }}
-          src="/Portrait.jpg"
-          alt="Portrait"
-        />
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            height: "100%",
-            width: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            zIndex: 1,
-          }}
-        />
-      </div>
-      <div
-        className="overlay-text"
-        style={{
-          position: "absolute",
-          color: "white",
-          zIndex: 2,
-          top: "190px",
-          left: "30px",
-        }}
-      >
-        <p className='limited'>
-          "20% OFF <br />
-          Limited Time Offer!"
-        </p>
-        <h4 className="collection">New Collection</h4>
-        <p className='dicover'>
-          Discover Your style with our Exclusive <br /> clothing sale!
-        </p>
-
-        <button
-          style={{
-            color:'#fff',
-            padding: "3px 13px",
-            gap: "10px",
-            borderRadius: "5px 0px 0px 0px",
-            backgroundColor: "#251F73",
-            fontFamily: "Poppins",
-            fontSize: "15px",
-            fontWeight: 700,
-            lineHeight: "37.5px",
-            textAlign: "center",
-          }}
-        >
-          SHOP NOW
-        </button>
+        <img className="image" src="/Portrait.jpg" alt="Portrait" />
+        <div className="overlay"></div>
+        <div className="overlay-text">
+          <h5 className="limited">
+            "20% OFF <br />
+            Limited Time Offer!"
+          </h5>
+          <h1 className="collection">New Collection</h1>
+          <h4 className="discover">
+            Discover Your style with our Exclusive <br /> clothing sale!
+          </h4>
+          <button className="styledButton ">Shop Now</button>
+        </div>
       </div>
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React, { useRef, useState } from "react";
 // // Import Swiper React components
