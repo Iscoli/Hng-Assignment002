@@ -1,0 +1,25 @@
+
+.checkout-header{
+  background: var(--pry-20, #C3BEF6);
+  padding: 13px 70px;
+  border-radius: 10px;
+  text-align: center;
+}
+.checkout-bottom{
+  padding: 13px 40px;
+  background: var(--Primary-color, #251F73);
+   border-radius: 10px;
+   text-align: center;
+}
+
+.subtotal-container {
+ 
+}
+
+.subtotal-item {
+ 
+}
+
+.subtotal-item span {
+ 
+}

@@ -1,5 +1,6 @@
   import  { useState} from "react";
   import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+  import { useNavigate } from "react-router-dom";
   import {
     faMagnifyingGlass,
     faCartShopping,
@@ -9,11 +10,12 @@
   import { useCart } from "../context/CartContext";
   import './NavSection.css'
 
-  function SectionOne() {
+  function NavSection() {
     const [activeItem, setActiveItem] = useState<number | null>(null);
     const [activeButton, setActiveButton] = useState<string | null>(null);
    
      const { cart } = useCart();
+     const navigate = useNavigate();
 
       console.log(cart,'cart')
 
@@ -63,6 +65,7 @@
                 textAlign: "left",
                 marginLeft: "30px",
               }}
+              onClick={() => navigate("/")}
             >
               Shopit
             </span>
@@ -147,12 +150,15 @@
               style={{ margin: "0 10px" }}
               icon={faMagnifyingGlass}
             />
-            <div style={{position:'relative'}}>
+            <div style={{ position: "relative" }}>
               <FontAwesomeIcon
                 style={{ margin: "0 10px" }}
                 icon={faCartShopping}
+                onClick={() => navigate("/cart")}
               />
-              <p className='cart-number'style={{position:'absolute'}}>{cart.length}</p>
+              <p className="cart-number" style={{ position: "absolute" }}>
+                {cart.length}
+              </p>
             </div>
 
             <FontAwesomeIcon style={{ margin: "0 10px" }} icon={faHeart} />
@@ -170,4 +176,4 @@
    
   }
 
-  export default SectionOne;
+  export default NavSection;

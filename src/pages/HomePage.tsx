@@ -7,11 +7,10 @@ import Footer from "../section/Footer";
 function HomePage() {
   return (
     <>
-      <NavSection />
+     
       <SectionOne />
       <SectionTwo />
-      <SectionThree />
-      <Footer/>
+     
     </>
   );
 }
