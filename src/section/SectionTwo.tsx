@@ -94,7 +94,7 @@ function SectionTwo() {
             </div>
           ))}
       </div>
-      <Stack spacing={2} className="paginationContainer centered">
+      <Stack spacing={2} className="paginationContainer">
         <Pagination
           count={Math.ceil(datas.length / itemsPerPage)}
           page={page}
