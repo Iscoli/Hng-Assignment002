@@ -9,15 +9,18 @@
   } from "@fortawesome/free-solid-svg-icons";
   import { useCart } from "../context/CartContext";
   import './NavSection.css'
+import { useLike } from "../context/HeartContext";
 
   function NavSection() {
     const [activeItem, setActiveItem] = useState<number | null>(null);
     const [activeButton, setActiveButton] = useState<string | null>(null);
    
      const { cart } = useCart();
+      const { likedItems } = useLike();
      const navigate = useNavigate();
 
       console.log(cart,'cart')
+      console.log(likedItems, "cart");
 
     const handleItemClick = (index: number) => {
       setActiveItem(index);
@@ -161,7 +164,15 @@
               </p>
             </div>
 
-            <FontAwesomeIcon style={{ margin: "0 10px" }} icon={faHeart} />
+            <div style={{ position: "relative" }}>
+              <FontAwesomeIcon
+                style={{ margin: "0 10px" }}
+                icon={faHeart}
+              />
+              <p className="cart-number" style={{ position: "absolute" }}>
+                {likedItems.length}
+              </p>
+            </div>
             <div className="hambuger-btn" style={{ marginRight: "10px" }}>
               <FontAwesomeIcon
                 icon={faBars}

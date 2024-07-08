@@ -1,0 +1,22 @@
+
+.product-details{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.product1 p{
+font-family: Poppins;
+font-size: 31.25px;
+font-weight: 500;
+line-height: 46.9px;
+text-align: left;
+
+}
+.product1{
+  flex-basis:40%;
+}
+.product2{
+  flex-basis: 40%;
+}
