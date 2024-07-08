@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useParams } from "react-router-dom";
 import { datas } from "../../components/Data";
 import "./Product1.css";

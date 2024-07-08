@@ -1,7 +1,7 @@
 // src/contexts/LikeContext.tsx
 
 import React, { createContext, useContext, useState, ReactNode } from "react";
-import { Product, LikedItem } from "./types";
+import { LikedItem } from "./types";
 import { datas } from "../components/Data"; // Import datas here
 
 interface LikeContextType {
