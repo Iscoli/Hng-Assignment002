@@ -40,7 +40,7 @@ function Footer() {
       <div>
         <p className="follow-footer">Follow Us</p>
         <ul 
-        style={{display:"flex", alignItems:'center', justifyContent:'center'}}
+        style={{display:"flex", alignItems:'center', }}
         className="social-bg">
           <li>
             <img src="/twitter.png" alt="twitter" className="iconnet" />
