@@ -1,5 +1,6 @@
 import "./SectionThree.css";
 
+
 function SectionThree() {
   return (
     <div className="section-three">
@@ -7,16 +8,16 @@ function SectionThree() {
       <img className="woman2" src="/woman1.png" alt="Woman 2" />
       <div className="dark-layer"></div>
       <div className="overlay-test">
-        <h5>Subscribe Our Newsletter</h5>
+        <h3>Subscribe Our Newsletter</h3>
         <p>
           Sign up for our newsletter to receive the latest <br></br> product market
           updates, and fashion tips <br></br> straight to your inbox.
         </p>
-        <form>
+        <form className="forma">
           <input 
           placeholder="Enter Email"
-          />
-          <button>Subscribe</button>
+          /><br></br>
+          <button className='subcribe-btn'>Subscribe</button>
         </form>
       </div>
     </div>

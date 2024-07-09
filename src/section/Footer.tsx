@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import "./Footer.css";
 import {
   faLocationDot,
@@ -40,8 +39,18 @@ function Footer() {
       </div>
       <div>
         <p className="follow-footer">Follow Us</p>
-        <ul>
-         
+        <ul 
+        style={{display:"flex", alignItems:'center', justifyContent:'center'}}
+        className="social-bg">
+          <li>
+            <img src="/twitter.png" alt="twitter" className="iconnet" />
+          </li>
+          <li>
+            <img src="/Vector (4).png" alt="Facebook" className="iconnet" />
+          </li>
+          <li>
+            <img src="/Vector (3).png" alt="instagram" className="iconnet" />
+          </li>
         </ul>
       </div>
     </section>

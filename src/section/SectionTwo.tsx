@@ -10,6 +10,7 @@ import {
   faStar,
   faCartShopping,
   faHeart as faHeartSolid,
+  faCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
 import "./SectionTwo.css";
@@ -30,6 +31,34 @@ function SectionTwo() {
 
   return (
     <div>
+      <section
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          margin: "30px 6%",
+        }}
+      >
+        <div className="ontop1">
+          <span className="ontop11" style={{ marginRight: "20px" }}>
+            52,082+ Iteams
+          </span>
+          <span className="ontop12" style={{ marginRight: "20px" }}>
+            1-24 Results
+          </span>
+        </div>
+        <div className="ontop2">
+          <span className="ontop21">
+            <FontAwesomeIcon
+              style={{ marginRight: "20px", marginLeft: "20px" }}
+              className="white-check"
+              icon={faCheck}
+            />
+            <span style={{color:'white'}}> Available product </span>
+          </span>
+          <span className="ontop22">filter</span>
+        </div>
+      </section>
       <div className="mainCardContainer">
         {datas
           .slice((page - 1) * itemsPerPage, page * itemsPerPage)

@@ -5,6 +5,14 @@
     align-items: center;
     margin-top: 10px;
     margin-bottom: 50px;
+    width: 100%;
+}
+
+.pt-details{
+      background: rgb(235, 243, 254);
+    text-align: center;
+    width: 100%;
+    padding: 40% 10%;
 }
 .product1 p{
 font-family: Poppins;
@@ -19,4 +27,16 @@ text-align: left;
 }
 .product2{
   flex-basis: 40%;
+}
+
+
+@media(max-width:700px){
+  .product-details{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
 }

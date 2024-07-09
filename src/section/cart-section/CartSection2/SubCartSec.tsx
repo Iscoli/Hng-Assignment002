@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import { useCart } from "../../../context/CartContext";
-import './SubCartSec.css'
-
+import "./SubCartSec.css";
 
 const SubCartSec = () => {
   const { cart } = useCart();
@@ -16,18 +16,21 @@ const SubCartSec = () => {
     <div className="subtotal-container">
       <p className="checkout-header">Total For Product</p>
       <div className="subtotal-item">
-        <span>Subtotal:</span>
+        <p>Subtotal:</p>
         <span>${subtotal.toFixed(2)}</span>
       </div>
       <div className="subtotal-item">
-        <span>Delivery Fee:</span>
+        <p>Delivery Fee:</p>
         <span>${deliveryFee.toFixed(2)}</span>
       </div>
       <div className="subtotal-item">
-        <span>Total Amount:</span>
+        <p>Total Amount:</p>
         <span>${totalAmount.toFixed(2)}</span>
       </div>
-      <p className='checkout-bottom'>CheckOut</p>
+      <p className="checkout-bottom">CheckOut</p>
+      <Link to="/">
+        <p className="checkout-bottom2">cancel</p>
+      </Link>
     </div>
   );
 };

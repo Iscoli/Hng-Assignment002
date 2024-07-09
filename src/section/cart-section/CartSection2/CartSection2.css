@@ -1,25 +1,219 @@
+@media (min-width: 750px) {
+  .cartsection2 {
+    margin: 73px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .checkout-bottom {
+    padding: 11px 61px;
+    background: var(--Primary-color, #251f73);
+    border-radius: 4.63px;
+    text-align: center;
+    /* width: 241px; */
+    align-items: center;
+    width: 40%;
+    /* text-align: center; */
+    margin: 0px auto;
+    /* padding: 4.63px; */
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 13.9px;
+    text-align: center;
+    color: white;
+  }
+  .checkout-header {
+    background: var(--pry-20, #c3bef6);
+    padding: 13px 88px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .subtotal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: left; */
+    margin: 0 30px;
+  }
+
+  .subtotal-item p {
+    font-family: Poppins;
+    font-size: 13.27px;
+    font-weight: 400;
+    line-height: 13.9px;
+    text-align: left;
+
+    color: var(--Grey-20, #b1b2b4);
+  }
+  .subtotal-item span {
+    font-family: Poppins;
+    font-size: 13.27px;
+    font-weight: 400;
+    line-height: 13.9px;
+    text-align: left;
+
+    color: var(--Black, #050505);
+  }
+  .table-container {
+    padding: 5.79px 0;
+    gap: 14.48px;
+    width: 397.49px; /* Adjust this if 'Hug' means something else in your context */
+  }
+
+  .table {
+    width: 397.49px; /* Adjust this if 'Hug' means something else in your context */
+    height: 55.1px; /* Adjust this if 'Hug' means something else in your context */
+    border-collapse: collapse;
+  }
+
+  .table th,
+  .table td {
+    border-bottom: 0.29px solid var(--Primary-color, #251f73);
+  }
+  .table tr {
+    text-align: center;
+  }
+
+  .table th,
+  .table td {
+    padding: 5.79px 0;
+    gap: 11.58px;
+  }
+
+  .firstTable {
+    display: flex;
+    align-items: center;
+  }
+
+  .check-style {
+    background: var(--Primary-color, #251f73);
+    border-radius: 50%;
+    color: white;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 750px) {
+  .cartsection2 {
+    margin: 73px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subtotal-container {
+    margin-top: 50px;
+  }
+  .firstTable {
+    display: flex;
+    align-items: center;
+  }
+
+  .check-style {
+    background: var(--Primary-color, #251f73);
+    border-radius: 50%;
+    color: white;
+    padding: 3px;
+  }
+  .checkout-bottom {
+    padding: 11px 61px;
+    background: var(--Primary-color, #251f73);
+    border-radius: 4.63px;
+    text-align: center;
+    /* width: 241px; */
+    align-items: center;
+    width: 40%;
+    /* text-align: center; */
+    margin: 0px auto;
+    /* padding: 4.63px; */
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 13.9px;
+    text-align: center;
+    color: white;
+  }
+  .checkout-header {
+    background: var(--pry-20, #c3bef6);
+    padding: 13px 88px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+  }
+
+  .subtotal-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: left; */
+    margin: 0 30px;
+  }
+
+  .subtotal-item p {
+    font-family: Poppins;
+    font-size: 13.27px;
+    font-weight: 400;
+    line-height: 13.9px;
+    text-align: left;
+
+    color: var(--Grey-20, #b1b2b4);
+  }
+  .subtotal-item span {
+    font-family: Poppins;
+    font-size: 13.27px;
+    font-weight: 400;
+    line-height: 13.9px;
+    text-align: left;
+
+    color: var(--Black, #050505);
+  }
+  .checkout-bottom2 {
+    display: none;
+    padding: 11px 61px;
+    background: "white";
+    border-radius: 0.5px solid var(--Primary-color, #251f73);
+    /* width: 241px; */
+    align-items: center;
+    width: 40%;
+    /* text-align: center; */
+    margin: 0px auto;
+    /* padding: 4.63px; */
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 13.9px;
+    text-align: center;
+    color: black;
+  }
+}
+
 .table-container {
-  max-height: 400px; /* Adjust the height as needed */
+  max-height: 400px;
   overflow-y: auto;
+  overflow-x: auto;
+  flex-basis: 60%;
+  max-width: 90%;
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
 }
-
+.table tr {
+  border: "none";
+}
 .table th {
   background-color: var(--Primary-color, #251f73);
   color: white;
   padding: 10px;
   position: sticky;
   top: 0;
-  border: none;
 }
 
 .table td {
-  padding: 10px;
-  border: none;
+  padding: 5px;
 }
 
 .table-container table,

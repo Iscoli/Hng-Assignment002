@@ -24,6 +24,28 @@
   z-index: 1;
 }
 
+.subcribe-btn{
+     background: var(--Primary-color, #251F73);
+    border: none;
+    color: white;
+    padding: 9px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 5px auto;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 90%;
+}
+
+.forma input{
+      width: 82%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    border: none;
+}
 
 @media (max-width: 800px) {
   .woman1 {
@@ -72,7 +94,7 @@ color: var(--White, #FBFBFC);
     position: absolute;
     color: white;
     z-index: 2;
-    top: 2px;
+    top: 1px;
     left: 20px;
   }
   .overlay-test p{
@@ -80,7 +102,6 @@ color: var(--White, #FBFBFC);
 font-family: Poppins;
 font-size: 15px;
 font-weight: 400;
-line-height: 30px;
 text-align: justified;
 
 }

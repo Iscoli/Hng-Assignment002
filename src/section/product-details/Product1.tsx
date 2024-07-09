@@ -31,11 +31,7 @@ function Product1() {
       <div className="product1">
         <p>Product Details</p>
         <div
-          style={{
-            padding: "100px",
-            background: "#EBF3FE",
-            textAlign: "center",
-          }}
+          className="pt-details"
         >
           <img src={product.image} alt="fashion" />
         </div>

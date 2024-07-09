@@ -5,72 +5,50 @@
 }
 
 .footer-section li {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 }
 
- 
-@media (max-width: 500px) {
-  .footer-section {
-    margin-left: 3%;
-    padding: 10px;
-    padding-bottom: 30px;
-  }
-
-  .shopit-footer {
-    font-family: Poppins;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 37.5px;
-    color: var(--Primary-color, #251F73);
-
-  }
-
-  .link-footer,
-  .follow-footer {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    margin-bottom: 6px;
-    border-bottom: 2px solid black;
-    width: 86px;
-    text-align: center;
-  }
-  
+.social-bg li {
+  padding: 10px 5px;
 }
 
-@media (min-width: 500px) {
+.iconnet {
+  color: white;
+}
 
-  .iconnet{
-    color: 'white';
-  }
+.footer-section {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  background: var(--Primary-color, #251f73);
+  color: white;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.shopit-footer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 37.5px;
+}
+
+.link-footer,
+.follow-footer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 6px;
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 500px) {
   .footer-section {
-    display: flex;
+    flex-direction: column;
     align-items: baseline;
-    justify-content: space-around;
-    background: var(--Primary-color, #251f73);
-    color: white;
-    padding: 10px;
-    padding-bottom: 30px;
-  }
-
-  .shopit-footer {
-    font-family: Poppins;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 37.5px;
-  }
-
-  .link-footer,
-  .follow-footer {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    margin-bottom: 6px;
-    border-bottom: 2px solid white;
   }
 }
