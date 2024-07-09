@@ -28,9 +28,6 @@ const SubCartSec = () => {
         <span>${totalAmount.toFixed(2)}</span>
       </div>
       <p className="checkout-bottom">CheckOut</p>
-      <Link to="/">
-        <p className="checkout-bottom2">cancel</p>
-      </Link>
     </div>
   );
 };

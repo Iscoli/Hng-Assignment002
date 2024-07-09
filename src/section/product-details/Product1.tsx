@@ -30,29 +30,29 @@ function Product1() {
     <section className="product-details">
       <div className="product1">
         <p>Product Details</p>
-        <div
-          className="pt-details"
-        >
+        <div className="pt-details">
           <img src={product.image} alt="fashion" />
         </div>
       </div>
       <div className="product2">
-        <p>{product.name}</p>
-        <p>$450.00</p>
-        <p>4.5 (3.5k Reviews)</p>
-        <p>
+        <p className="p-21">{product.name}</p>
+        <p className="p-22">$450.00</p>
+        <p className="p-23">4.5 (3.5k Reviews)</p>
+        <p className="p-24">
           A stunning, eco-friendly gown made from sustainable materials. Perfect
           for any formal occasion, the EcoElegance Gown combines style and
           sustainability, designed to make you shine at any special event. This
           floor-length gown combines timeless style with modern sophistication,
           ensuring you make a lasting impression.
         </p>
-        <div className="product2">
+        <div className="product12">
           <p>Color</p>
-          <span>Blue</span>
-          <span>Yellow</span>
-          <span>Black</span>
-          <span>Orange</span> <br />
+          <div>
+            <span>Blue</span>
+            <span>Yellow</span>
+            <span>Black</span>
+            <span>Orange</span>
+          </div>
           <span>White</span>
           <span>Brown</span>
           <span>Green</span>
@@ -68,10 +68,18 @@ function Product1() {
           <span>L</span>
         </div>
 
-        <div>
-          <FontAwesomeIcon icon={faPlus} onClick={() => addToCart(product)} />
-          <span>{quantity}</span>
-          <FontAwesomeIcon icon={faMinus} onClick={handleRemoveFromCart} />
+        <div style={{display:'flex', alignItems:'center'}}>
+          <FontAwesomeIcon
+            icon={faPlus}
+            onClick={() => addToCart(product)}
+            className="sign-class"
+          />
+          <p style={{padding:'5px'}}>{quantity}</p>
+          <FontAwesomeIcon
+            className="sign-class"
+            icon={faMinus}
+            onClick={handleRemoveFromCart}
+          />
         </div>
         <div>
           <span>Add Cart</span>

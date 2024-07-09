@@ -42,15 +42,19 @@ function CartSection2() {
                 <td>Blue</td>
                 <td>xl</td>
                 <td>
-                  <FontAwesomeIcon
-                    icon={faPlus}
-                    onClick={() => addToCart(item)}
-                  />
-                  <span>{item.quantity}</span>
-                  <FontAwesomeIcon
-                    icon={faMinus}
-                    onClick={() => removeFromCart(item.name)}
-                  />
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <FontAwesomeIcon
+                      icon={faPlus}
+                      onClick={() => addToCart(item)}
+                      className="sign-class"
+                    />
+                    <p style={{ padding: "5px" }}>{item.quantity}</p>
+                    <FontAwesomeIcon
+                      className="sign-class"
+                      icon={faMinus}
+                      onClick={() => removeFromCart(item.name)}
+                    />
+                  </div>
                 </td>
                 <td>${item.amount}</td>
                 <td>
