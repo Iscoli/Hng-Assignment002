@@ -1,4 +1,3 @@
-
 import { useCart } from "../../../context/CartContext";
 import "./SubCartSec.css";
 
@@ -21,11 +20,11 @@ const SubCartSec = () => {
       </div>
       <div className="subtotal-item">
         <p>Delivery Fee:</p>
-        <span>${deliveryFee.toFixed(2)}</span>
+        <span>${(deliveryFee / 100).toFixed(2)}</span>
       </div>
       <div className="subtotal-item">
         <p>Total Amount:</p>
-        <span>${totalAmount.toFixed(2)}</span>
+        <span>${(totalAmount / 100).toFixed(2)}</span>
       </div>
       <p className="checkout-bottom">CheckOut</p>
     </div>

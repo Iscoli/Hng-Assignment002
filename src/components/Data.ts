@@ -5,7 +5,7 @@ export const datas = [
     discount: 5.0,
     rating: 4.2,
     percentage: "10%",
-    image: "/frame4.png",
+    image: "/frame7.png",
   },
   {
     name: "EcoElegance Gown",
@@ -13,7 +13,7 @@ export const datas = [
     discount: 10.0,
     rating: 4.5,
     percentage: "20%",
-    image: "/frame7.png",
+    image: "/frame3.png",
   },
   {
     name: "Chic Casual Tee",
@@ -21,7 +21,7 @@ export const datas = [
     discount: 2.0,
     rating: 4.0,
     percentage: "10%",
-    image: "/frame4.png",
+    image: "/frame2.png",
   },
   {
     name: "Summer Breeze Dress",
@@ -37,7 +37,7 @@ export const datas = [
     discount: 3.0,
     rating: 4.1,
     percentage: "10%",
-    image: "/frame4.png",
+    image: "/frame2.png",
   },
   {
     name: "Winter Wool Coat",
@@ -53,7 +53,7 @@ export const datas = [
     discount: 5.0,
     rating: 4.3,
     percentage: "12%",
-    image: "/frame4.png",
+    image: "/frame2.png",
   },
   {
     name: "Urban Denim Jacket",
@@ -69,7 +69,7 @@ export const datas = [
     discount: 30.0,
     rating: 4.9,
     percentage: "20%",
-    image: "/frame1.png",
+    image: "/frame3.png",
   },
   {
     name: "Cozy Knit Sweater",
@@ -93,7 +93,7 @@ export const datas = [
     discount: 2.5,
     rating: 4.0,
     percentage: "10%",
-    image: "/frame6.png",
+    image: "/frame3.png",
   },
   {
     name: "Modern Office Blazer",
@@ -109,7 +109,7 @@ export const datas = [
     discount: 13.0,
     rating: 4.5,
     percentage: "20%",
-    image: "/frame6.png",
+    image: "/frame3.png",
   },
   {
     name: "Stylish Trench Coat",
@@ -125,7 +125,7 @@ export const datas = [
     discount: 1.5,
     rating: 4.1,
     percentage: "10%",
-    image: "/frame6.png",
+    image: "/frame3.png",
   },
   {
     name: "Vintage Leather Jacket",
@@ -141,7 +141,7 @@ export const datas = [
     discount: 9.0,
     rating: 4.5,
     percentage: "10%",
-    image: "/frame6.png",
+    image: "/frame3.png",
   },
   {
     name: "Casual Denim Shorts",
@@ -309,7 +309,7 @@ export const datas = [
     discount: 16.0,
     rating: 4.5,
     percentage: "20%",
-    image: "/frame6.png",
+    image: "/frame3.png",
   },
   {
     name: "Elegant Evening Shoes",
@@ -317,6 +317,6 @@ export const datas = [
     discount: 16.0,
     rating: 4.5,
     percentage: "20%",
-    image: "/frame6.png",
+    image: "/frame3.png",
   },
 ];
